@@ -1,6 +1,6 @@
 {
-  "name": "piaic-website-by-ahsan",
-  "version": "0.1.0",
+  "name": "piaic-website",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",

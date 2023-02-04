@@ -22,7 +22,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
 } from '@chakra-ui/icons';
-import { ColorModeSwitcher } from './colormode';
+import ColorModeSwitcher  from './colormode';
 
 export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();

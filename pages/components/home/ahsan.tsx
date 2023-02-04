@@ -160,9 +160,16 @@ import {
           spacing={'20'}
           mt={16}
           mx={'auto'}>
-          {testimonials.map((cardInfo, index) => (
-            <TestimonialCard {...cardInfo} index={index} />
-          ))}
+          {testimonials.map((testimonial, index) => (
+  <TestimonialCard
+    key={index}
+    name={testimonial.name}
+    role={testimonial.role}
+    content={testimonial.content}
+    avatar={testimonial.avatar}
+    index={index}
+  />
+))}
         </SimpleGrid>
         <Box>
           <Icon viewBox="0 0 40 35" mt={14} boxSize={10} color={'purple.400'}>

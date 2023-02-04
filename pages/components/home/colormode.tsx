@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     useColorMode,
     useColorModeValue,
@@ -8,7 +9,7 @@ import {
   
   type ColorModeSwitcherProps = Omit<IconButtonProps, "aria-label">
   
-  export const ColorModeSwitcher = (props: ColorModeSwitcherProps) => {
+  export default function ColorModeSwitcher  (props: ColorModeSwitcherProps) :any {
     const { toggleColorMode } = useColorMode()
     const text = useColorModeValue("dark", "light")
     const SwitchIcon = useColorModeValue(FaMoon, FaSun)
